@@ -1,1 +1,1 @@
-web: http-server site -p 80
+web: npm run serve
