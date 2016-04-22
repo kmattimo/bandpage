@@ -39,7 +39,8 @@ module.exports = {
     styles: destAssetsDir + '/css',
     images: destAssetsDir + '/images',
     fonts: destAssetsDir + '/fonts',
-    staticjs: destAssetsDir + '/js'
+    staticjs: destAssetsDir + '/js',
+    productionDir: 'static'
   },
 
   images: {

@@ -18,8 +18,7 @@
     "build": "npm run gulp",
     "start": "gulp --dev",
     "test": "npm run gulp build",
-    "postinstall": "node node_modules/gulp/bin/gulp build:production",
-    "serve" : "http-server site"
+    "serve" : "http-server static"
   },
   "os": [
     "win32",
