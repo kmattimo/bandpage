@@ -1,0 +1,18 @@
+@import "vars";
+
+$arrowhead-width: 10vw;
+$arrowhead-height: $arrowhead-width;
+$arrowbody-width: 25vw;
+
+.header {
+  color: $logo-text-color;
+  margin-top: 20vh;
+  position: relative;
+  font-family: "Lucida Console", Monaco, monospace; 
+  font-size: 5.5vw;
+  // font-weight: bold; //looks bad
+  text-align: center;
+}
+
+
+

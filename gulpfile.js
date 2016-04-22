@@ -44,9 +44,9 @@ gulp.task('styles', function () {
     return gulp.src(config.src.styles)
         .pipe(plugins.plumber({ errorHandler: onError }))
         .pipe(plugins.sass(config.sass.settings))
-        .pipe(plugins.cssUrlAdjuster({
-            prepend: config.dest.images
-        }))
+        // .pipe(plugins.cssUrlAdjuster({
+        //     prepend: config.dest.images
+        // }))
         .pipe(plugins.if(!config.dev, plugins.combineMediaQueries()))
         .pipe(plugins.autoprefixer(config.sass.autoprefixer))
         .pipe(plugins.if(!config.dev, plugins.csso()))

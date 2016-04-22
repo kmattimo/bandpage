@@ -1,0 +1,35 @@
+.arrowhead {
+  left: 50%;
+  margin-left: - ($arrowhead-width / 2 ); 
+  position: absolute;
+  //weird triangle css shit
+  width: auto;
+  height: 0;
+  border-style: solid;
+  border-width: 0 $arrowhead-width $arrowhead-height 0;
+  border-color: transparent $logo-color transparent transparent;
+}
+
+.arrowbody {
+  // position: absolute;
+  display: block;
+  margin: 0 auto;
+  //fallback.. does it work?
+  background: url('/public/images/arrow-body.svg') no-repeat;
+  background-size: contain;
+  width: $arrowbody-width;
+  height: $arrowbody-width;
+}
+
+.title-first {
+  position: absolute;
+  right: 52%;
+  margin-right: $arrowhead-width / 2; 
+}
+
+
+.title-second {
+  position: absolute;
+  left: 50%;
+  margin-left: $arrowhead-width / 2;
+}

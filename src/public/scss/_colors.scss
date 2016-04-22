@@ -1,0 +1,13 @@
+$seti-blue-original: rgb(79,153,211); //aka #4F99D3
+$seti-blue: darken($seti-blue-original, 0);
+$seti-green: rgb(159,202,86);
+$seti-yellow: rgb(220,205,105);
+$seti-red: rgb(206,64,69);
+$seti-purple: rgb(160,116,196);
+$seti-background: rgb(21,23,24);
+$seti-background-lighter: #333;
+$seti-text: #aaa;
+
+$secondary-grey: color("grey", "darken-4");
+$font-grey: color("grey", "lighten-1");
+$ui-grey: color("grey", "darken-2");
