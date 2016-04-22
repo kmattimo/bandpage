@@ -205,8 +205,7 @@ gulp.task('perf', ['test:performance']);
 gulp.task('build:production', ['clean'], function (cb) {
     plugins.sequence(
         ['fonts', 'images', 'styles', 'scripts', 'copy:extras', 'copy:staticjs'],
-        ['compile:templates'],
-        done
+        ['compile:templates']
     );
 });
 
