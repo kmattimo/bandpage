@@ -1,5 +1,10 @@
-Kickstart is a website starter kit, living style guide creator, and task runner that helps you kickstart a website build and create a living style guide that grows with your site.
 
+Bandpage for broken arrow [something] 
+
+experimenting with [dok | hero]ku friendly builds...
+config:set ROOT=static for static hosting 
+
+new gulp tasks for copying assets dir into commit-land
 
 ##Kyle's streamlined personal project/hackathon version
 * Disregard older browsers for the sake of learning cool stuff (e.g. flexbox)
