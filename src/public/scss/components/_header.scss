@@ -6,12 +6,19 @@ $arrowbody-width: 25vw;
 
 .header {
   color: $logo-text-color;
-  margin-top: 20vh;
+  margin-top: 15vh;
+  @media (min-width: $huge-break) { 
+    margin-top: 5vh;
+  } 
   position: relative;
   font-family: "Lucida Console", Monaco, monospace; 
   font-size: 5.5vw;
   // font-weight: bold; //looks bad
   text-align: center;
+  
+  @media (min-width: $huge-break) {
+    font-size: 60px;
+  }
 }
 
 

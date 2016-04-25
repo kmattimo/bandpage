@@ -1,6 +1,6 @@
 @import "colors";
 @import "vars";
-// $max-width: 75em; // 1200px / 16px
+$max-width: $huge-break;
 
 
 
@@ -9,12 +9,18 @@ html,body {
 }
 
 body {
+  color: $seti-text;
+  font-size: 16px;
   position: relative;
   background-color:  $background-color;
-    // max-width: $max-width;
+    max-width: $max-width;
     margin: auto;
     line-height: 1.4;
 }
+
+.page {
+  display: flex;
+} 
 
 
 

@@ -53,8 +53,8 @@ gulp.task('styles', function () {
         // .pipe(plugins.cssUrlAdjuster({
         //     prepend: config.dest.images
         // }))
-        .pipe(plugins.if(!config.dev, plugins.combineMediaQueries()))
-        .pipe(plugins.autoprefixer(config.sass.autoprefixer))
+        // .pipe(plugins.if(!config.dev, plugins.combineMediaQueries()))
+        // .pipe(plugins.autoprefixer(config.sass.autoprefixer))
         .pipe(plugins.if(!config.dev, plugins.csso()))
         .pipe(gulp.dest(config.dest.styles))
         .pipe(plugins.if(config.dev, bsreload({ stream: true })));
