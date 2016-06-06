@@ -1,0 +1,10 @@
+
+.contact-us {
+  font-size: 24px;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

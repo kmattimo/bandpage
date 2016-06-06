@@ -1,6 +1,12 @@
 //the occasional app/page specific rules that don't fit within reusable classes
+@import '../components/background';
 
 .pitch {
   font-size: 24px;
   text-align: center;
+}
+
+html {
+  @extend .blue-background;
+  
 }

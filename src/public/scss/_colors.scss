@@ -13,6 +13,9 @@ $font-grey: color("grey", "lighten-1");
 $ui-grey: color("grey", "darken-2");
 
 
-$logo-color: $seti-blue;
-$logo-text-color: $seti-blue-original;
-$background-color: rgb(24, 24, 24);
+$logo-color: rgb(33, 33, 33);
+$logo-text-color: $logo-color;
+$text-color: black;
+
+// $background-color: rgb(24, 24, 24);
+$background-color: transparent;

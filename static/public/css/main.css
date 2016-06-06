@@ -14,7 +14,9 @@ summary {
 audio,
 canvas,
 video {
-  display: inline-block; }
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
 
 audio:not([controls]) {
   display: none;
@@ -24,6 +26,7 @@ audio:not([controls]) {
   display: none; }
 
 html {
+  font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -75,6 +78,9 @@ b,
 strong {
   font-weight: bold; }
 
+blockquote {
+  margin: 1em 40px; }
+
 dfn {
   font-style: italic; }
 
@@ -82,11 +88,16 @@ mark {
   background: #ff0;
   color: #000; }
 
+p,
+pre {
+  margin: 1em 0; }
+
 code,
 kbd,
 pre,
 samp {
   font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
   font-size: 1em; }
 
 pre {
@@ -96,6 +107,9 @@ pre {
 
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+q {
+  quotes: none; }
 
 q:before, q:after {
   content: '';
@@ -117,13 +131,35 @@ sup {
 sub {
   bottom: -0.25em; }
 
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px; }
+
+nav ul,
+nav ol {
+  list-style-image: none; }
+
 img {
-  border: 0; }
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
 
 svg:not(:root) {
   overflow: hidden; }
 
 figure {
+  margin: 0; }
+
+form {
   margin: 0; }
 
 fieldset {
@@ -134,7 +170,8 @@ fieldset {
 legend {
   border: 0;
   padding: 0;
-  white-space: normal; }
+  white-space: normal;
+  *margin-left: -7px; }
 
 button,
 input,
@@ -143,7 +180,8 @@ textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  *vertical-align: middle; }
 
 button, input {
   line-height: normal; }
@@ -157,7 +195,8 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
-  cursor: pointer; }
+  cursor: pointer;
+  *overflow: visible; }
 
 button[disabled],
 input[disabled] {
@@ -185,16 +224,18 @@ input[type="search"] {
 
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
-  padding: 0; }
+  padding: 0;
+  *height: 13px;
+  *width: 13px; }
 
 html, body {
   height: 100%; }
 
 body {
-  color: #aaa;
+  color: black;
   font-size: 16px;
   position: relative;
-  background-color: #181818;
+  background-color: transparent;
   max-width: 1200px;
   margin: auto;
   line-height: 1.4; }
@@ -202,12 +243,12 @@ body {
 .page {
   display: flex; }
 
+a, a:visited {
+  color: black; }
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400; }
-
-a {
-  color: #4f99d3; }
 
 .is-disabled {
   cursor: auto;
@@ -242,11 +283,11 @@ a {
       max-width: 100%; } }
 
 .arrowbody-inline {
-  background: url('data:image/svg+xml;utf8,   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"    width="387.000000pt" height="375.000000pt" viewBox="0 0 387.000000 375.000000"    preserveAspectRatio="xMidYMid meet">   <metadata>   Created by potrace 1.13, written by Peter Selinger 2001-2015   </metadata>   <g transform="translate(0.000000,375.000000) scale(0.100000,-0.100000)"  fill="#4f99d3" stroke="none">   <path d="M1514 1983 c-462 -746 -840 -1359 -841 -1362 -1 -3 14 -16 33 -28   l34 -22 263 128 c1175 573 1528 743 1541 738 7 -3 16 -16 19 -29 3 -13 58   -257 123 -543 64 -286 120 -524 124 -528 10 -12 90 11 90 25 0 11 -194 876   -207 923 -4 15 3 12 31 -15 l36 -34 36 35 36 36 -64 60 c-35 33 -75 71 -89 84   -23 21 -48 89 -33 89 3 0 50 -36 103 -80 54 -44 102 -80 107 -80 16 0 67 72   57 79 -6 3 -249 199 -541 435 l-530 428 37 62 c21 33 156 252 300 485 144 233   261 424 259 426 -18 12 -77 45 -80 45 -3 0 -383 -611 -844 -1357z m584 -133   c191 -177 348 -324 350 -328 2 -7 -1568 -775 -1573 -770 -3 3 868 1417 873   1418 1 0 159 -144 350 -320z"/> </g> </svg>') no-repeat center !important;
+  background: url('data:image/svg+xml;utf8,   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"    width="387.000000pt" height="375.000000pt" viewBox="0 0 387.000000 375.000000"    preserveAspectRatio="xMidYMid meet">   <metadata>   Created by potrace 1.13, written by Peter Selinger 2001-2015   </metadata>   <g transform="translate(0.000000,375.000000) scale(0.100000,-0.100000)"  fill="#212121" stroke="none">   <path d="M1514 1983 c-462 -746 -840 -1359 -841 -1362 -1 -3 14 -16 33 -28   l34 -22 263 128 c1175 573 1528 743 1541 738 7 -3 16 -16 19 -29 3 -13 58   -257 123 -543 64 -286 120 -524 124 -528 10 -12 90 11 90 25 0 11 -194 876   -207 923 -4 15 3 12 31 -15 l36 -34 36 35 36 36 -64 60 c-35 33 -75 71 -89 84   -23 21 -48 89 -33 89 3 0 50 -36 103 -80 54 -44 102 -80 107 -80 16 0 67 72   57 79 -6 3 -249 199 -541 435 l-530 428 37 62 c21 33 156 252 300 485 144 233   261 424 259 426 -18 12 -77 45 -80 45 -3 0 -383 -611 -844 -1357z m584 -133   c191 -177 348 -324 350 -328 2 -7 -1568 -775 -1573 -770 -3 3 868 1417 873   1418 1 0 159 -144 350 -320z"/> </g> </svg>') no-repeat center !important;
   background-size: contain !important; }
 
 .header {
-  color: #4f99d3;
+  color: #212121;
   margin-top: 15vh;
   position: relative;
   font-family: "Lucida Console", Monaco, monospace;
@@ -267,7 +308,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 0 10vw 10vw 0;
-  border-color: transparent #4f99d3 transparent transparent; }
+  border-color: transparent #212121 transparent transparent; }
 
 .arrowbody {
   display: block;
@@ -286,6 +327,31 @@ a {
   position: absolute;
   left: 50%;
   margin-left: 5vw; }
+
+.contact-us {
+  font-size: 24px; }
+  .contact-us a {
+    text-decoration: none; }
+    .contact-us a:hover {
+      text-decoration: underline; }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+31,4e92c9+60,7db9e8+100 */
+.blue-background, html {
+  background: #457fca;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #3178d4, #5691c8);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #457fca, #5691c8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+31,4e92c9+60,7db9e8+100 */
+.blue-background, html {
+  background: #457fca;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #3178d4, #5691c8);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #457fca, #5691c8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .pitch {
   font-size: 24px;
