@@ -232,10 +232,10 @@ html, body {
   height: 100%; }
 
 body {
-  color: black;
+  color: rgba(167, 167, 167, 0.88);
   font-size: 16px;
   position: relative;
-  background-color: transparent;
+  background-color: black;
   max-width: 1200px;
   margin: auto;
   line-height: 1.4; }
@@ -244,7 +244,7 @@ body {
   display: flex; }
 
 a, a:visited {
-  color: black; }
+  color: rgba(167, 167, 167, 0.88); }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -283,15 +283,15 @@ body {
       max-width: 100%; } }
 
 .arrowbody-inline {
-  background: url('data:image/svg+xml;utf8,   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"    width="387.000000pt" height="375.000000pt" viewBox="0 0 387.000000 375.000000"    preserveAspectRatio="xMidYMid meet">   <metadata>   Created by potrace 1.13, written by Peter Selinger 2001-2015   </metadata>   <g transform="translate(0.000000,375.000000) scale(0.100000,-0.100000)"  fill="#212121" stroke="none">   <path d="M1514 1983 c-462 -746 -840 -1359 -841 -1362 -1 -3 14 -16 33 -28   l34 -22 263 128 c1175 573 1528 743 1541 738 7 -3 16 -16 19 -29 3 -13 58   -257 123 -543 64 -286 120 -524 124 -528 10 -12 90 11 90 25 0 11 -194 876   -207 923 -4 15 3 12 31 -15 l36 -34 36 35 36 36 -64 60 c-35 33 -75 71 -89 84   -23 21 -48 89 -33 89 3 0 50 -36 103 -80 54 -44 102 -80 107 -80 16 0 67 72   57 79 -6 3 -249 199 -541 435 l-530 428 37 62 c21 33 156 252 300 485 144 233   261 424 259 426 -18 12 -77 45 -80 45 -3 0 -383 -611 -844 -1357z m584 -133   c191 -177 348 -324 350 -328 2 -7 -1568 -775 -1573 -770 -3 3 868 1417 873   1418 1 0 159 -144 350 -320z"/> </g> </svg>') no-repeat center !important;
+  background: url('data:image/svg+xml;utf8,   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"    width="387.000000pt" height="375.000000pt" viewBox="0 0 387.000000 375.000000"    preserveAspectRatio="xMidYMid meet">   <metadata>   Created by potrace 1.13, written by Peter Selinger 2001-2015   </metadata>   <g transform="translate(0.000000,375.000000) scale(0.100000,-0.100000)"  fill="rgba(167, 167, 167, 0.88)" stroke="none">   <path d="M1514 1983 c-462 -746 -840 -1359 -841 -1362 -1 -3 14 -16 33 -28   l34 -22 263 128 c1175 573 1528 743 1541 738 7 -3 16 -16 19 -29 3 -13 58   -257 123 -543 64 -286 120 -524 124 -528 10 -12 90 11 90 25 0 11 -194 876   -207 923 -4 15 3 12 31 -15 l36 -34 36 35 36 36 -64 60 c-35 33 -75 71 -89 84   -23 21 -48 89 -33 89 3 0 50 -36 103 -80 54 -44 102 -80 107 -80 16 0 67 72   57 79 -6 3 -249 199 -541 435 l-530 428 37 62 c21 33 156 252 300 485 144 233   261 424 259 426 -18 12 -77 45 -80 45 -3 0 -383 -611 -844 -1357z m584 -133   c191 -177 348 -324 350 -328 2 -7 -1568 -775 -1573 -770 -3 3 868 1417 873   1418 1 0 159 -144 350 -320z"/> </g> </svg>') no-repeat center !important;
   background-size: contain !important; }
 
 .header {
-  color: #212121;
-  margin-top: 15vh;
+  color: rgba(167, 167, 167, 0.88);
+  margin-top: 2vh;
   position: relative;
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 5.5vw;
+  font-size: 4.5vw;
   text-align: center; }
   @media (min-width: 1200px) {
     .header {
@@ -302,41 +302,71 @@ body {
 
 .arrowhead {
   left: 50%;
-  margin-left: -5vw;
+  margin-left: -2.5vw;
   position: absolute;
   width: auto;
   height: 0;
   border-style: solid;
-  border-width: 0 10vw 10vw 0;
-  border-color: transparent #212121 transparent transparent; }
+  border-width: 0 5vw 5vw 0;
+  border-color: transparent rgba(167, 167, 167, 0.88) transparent transparent; }
 
 .arrowbody {
   display: block;
   margin: 0 auto;
   background: url("/public/images/arrow-body.svg") no-repeat;
   background-size: contain;
-  width: 25vw;
-  height: 25vw; }
+  width: 10vw;
+  height: 10vw; }
 
 .title-first {
   position: absolute;
   right: 52%;
-  margin-right: 5vw; }
+  margin-right: 2.5vw; }
 
 .title-second {
   position: absolute;
   left: 50%;
-  margin-left: 5vw; }
+  margin-left: 2.5vw; }
 
 .contact-us {
-  font-size: 24px; }
-  .contact-us a {
-    text-decoration: none; }
-    .contact-us a:hover {
-      text-decoration: underline; }
+  font-size: 12px; }
+  .contact-us .contact-link {
+    text-decoration: none;
+    margin-right: 5px; }
+    .contact-us .contact-link:hover {
+      text-decoration: underline;
+      font-style: italic; }
+    .contact-us .contact-link i {
+      font-size: 20px;
+      margin-right: 2px; }
+    .contact-us .contact-link:not(:last-child) {
+      margin-right: 8px; }
+      .contact-us .contact-link:not(:last-child):after {
+        font-size: 20px;
+        content: " /";
+        margin-left: 2px; }
+
+.slide-over {
+  z-index: 50;
+  position: relative;
+  margin-top: 33.33333vw;
+  background-color: rgba(0, 0, 0, 0.88);
+  margin-bottom: 16.66667vw; }
+
+.fullscreen-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/public/images/cover.jpg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+31,4e92c9+60,7db9e8+100 */
-.blue-background, html {
+.blue-background {
   background: #457fca;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #3178d4, #5691c8);
@@ -344,8 +374,21 @@ body {
   background: linear-gradient(to left, #457fca, #5691c8);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
+.members {
+  font-size: 14px; }
+  .members p {
+    margin-bottom: 0.5em;
+    margin-top: 0; }
+
+.instrument {
+  font-style: italic;
+  margin-left: 10px;
+  font-size: .8em;
+  line-height: 1em;
+  vertical-align: center; }
+
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+31,4e92c9+60,7db9e8+100 */
-.blue-background, html {
+.blue-background {
   background: #457fca;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #3178d4, #5691c8);
@@ -356,3 +399,7 @@ body {
 .pitch {
   font-size: 24px;
   text-align: center; }
+
+html {
+  background-color: black;
+  padding: 0 2vw; }
