@@ -1,5 +1,6 @@
 //the occasional app/page specific rules that don't fit within reusable classes
 @import '../components/background';
+@import '../colors';
 
 .pitch {
   font-size: 24px;
@@ -7,6 +8,7 @@
 }
 
 html {
-  @extend .blue-background;
-  
+  // @extend .blue-background;
+  background-color: $background-color;
+  padding: 0 2vw;
 }

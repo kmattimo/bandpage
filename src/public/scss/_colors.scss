@@ -13,9 +13,9 @@ $font-grey: color("grey", "lighten-1");
 $ui-grey: color("grey", "darken-2");
 
 
-$logo-color: rgb(33, 33, 33);
+$logo-color: rgba(167, 167, 167, 0.88);
 $logo-text-color: $logo-color;
-$text-color: black;
+$text-color: $logo-color;
 
-// $background-color: rgb(24, 24, 24);
-$background-color: transparent;
+$background-color: rgb(0, 0, 0);
+$transparent-black: rgba(0, 0, 0, 0.88);
