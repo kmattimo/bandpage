@@ -188,13 +188,7 @@ gulp.task('watch', function () {
    
 });
 
-// test performance task
-gulp.task('test:performance', function () {
-    //TODO: write the performance tasks
-});
 
-// performance task entry point
-gulp.task('perf', ['test:performance']);
 
 // production build task
 gulp.task('build:production', ['clean'], function (cb) {

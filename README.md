@@ -5,6 +5,8 @@ experimenting with [dok | hero]ku friendly builds...
 config:set ROOT=static for static hosting 
 
 new gulp tasks for copying assets dir into commit-land
+default: build and BrowserSync
+copy:production to copy site to static
 
 ##Kyle's streamlined personal project/hackathon version
 * Disregard older browsers for the sake of learning cool stuff (e.g. flexbox)
